@@ -3,7 +3,7 @@
 
 
 
-
+## using this for sample_metadata table in genotyping
 huda_df <- flipAPI::DownloadXLSX("https://www.dropbox.com/s/6z8mtsgvy4phncw/Akil_HRLR_F1_F2_PhenotypeData.xlsx?dl=0", sheet = 1) %>% 
    as.data.frame() %>% 
    clean_names() %>% 
