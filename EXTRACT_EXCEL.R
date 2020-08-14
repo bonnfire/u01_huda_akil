@@ -25,4 +25,7 @@ huda_akil_phenotypes_df <- flipAPI::DownloadXLSX("https://www.dropbox.com/s/htm0
 # %>% 
   # mutate_at(vars(matches("")), as.factor)
 huda_akil_phenotypes_df %>% summary
+
+setwd("~/Desktop/Database/csv files/u01_huda_akil")
+write.csv(huda_akil_phenotypes_df, file = "huda_akil_phenotypes_n849.csv", row.names = F)
   
